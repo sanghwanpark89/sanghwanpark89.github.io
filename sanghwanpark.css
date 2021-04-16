@@ -1,0 +1,119 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-color: #222;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  padding: 4rem 5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+  padding: 0.75 0;
+  margin-bottom: 2rem;
+}
+
+h3 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: salmon;
+  margin-bottom: 1rem;
+
+}
+
+p {
+  line-height: 1.5;
+}
+
+section + section {
+  margin-top: 2rem;
+}
+
+/* li + li{
+  margin-top: 1rem;
+} */
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.profile {
+  text-align: center;
+}
+.profile img {
+  border-radius: 9999px;
+  width: 15rem;
+  height: 15rem;
+}
+
+.profile p {
+  color: #888;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+
+.contact ul {
+  margin-top: -2rem;
+}
+
+.contact li {
+  text-align: left;
+  text-transform: uppercase;
+  font-size: 1.15rem;
+  padding: 1rem;
+  color: #888;
+  border-top: 1px solid #888;
+  border-bottom: 1px solid #888;
+}
+
+.skills > ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1rem;
+}
+
+.timeline .event + .event {
+  padding-top: 1rem;
+}
+
+.timeline .event {
+  display: grid;
+  grid-template-columns: 5ch 1fr;
+}
+
+.timeline .content {
+  border-left: 1px solid #888;
+  padding-left: 1rem;
+  margin-left: 1rem;
+}
+
+.content > h3 + p {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.resume {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  grid-gap: 4rem;
+}
